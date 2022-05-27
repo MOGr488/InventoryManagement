@@ -22,16 +22,13 @@ class ProductIssueController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
-        dd(request());
-        
-        return view('products.issues.create', function( ){
-            
-            $table = Product::find();
-
-
-        });
+        // dd(request());
+        $product = Product::findorfail($id);
+        // dd($product);
+        return view('products.issues.create', compact('product')        
+        );
     }
 
     /**

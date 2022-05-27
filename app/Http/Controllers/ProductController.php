@@ -18,5 +18,5 @@ class ProductController extends Controller
         return view('products.issue',[
             'product' => $product
         ]);
-    }
+    }    
 }

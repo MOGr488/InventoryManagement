@@ -24,6 +24,7 @@
             <td>{{ $product['price'] }}</td>
             <td><a class="btn btn-primary" href="{{ route('products.issues.create', [ 'product' => $product->id ]) }}
               " role="button">Issue</a>
+              
               <a class="btn btn-secondary" href="/products/purchase" role="button">Purchase</a>              
             </td>
 
