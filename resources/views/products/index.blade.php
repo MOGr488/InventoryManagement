@@ -1,4 +1,5 @@
 <x-layout>
+
   @unless (count($products) == 0)
     <table class="table table-primary">
         <thead>
@@ -38,5 +39,6 @@
  @else
  <h2>No Products Found</h2>
 @endunless
+
 
 </x-layout>
